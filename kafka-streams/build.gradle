@@ -75,6 +75,7 @@ task runStreams(type: Exec) {
         }
         dependsOn assemble
         group = "Execution"
+        //println "Classpath=${sourceSets.main.runtimeClasspath.getAsPath()}"
         println "Using example ${streamsFullPath}"
         description = "Run a Kafka Streams exercise"
         commandLine "java", "-classpath", sourceSets.main.runtimeClasspath.getAsPath(), streamsFullPath

@@ -6,3 +6,4 @@ build/
 streams.properties
 ccloud.properties
 *.log
+apiKey*
